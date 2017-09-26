@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Knicker</title>
+		<meta charset="utf-8"/>
+		
+			<script type="text/javascript" src="programm.js" > 
+			 </script>
+			 
+	<style>	
+		body {
+				background-color: white;
+
+		}
+		.box{
+			display:-webkit-flex;
+			display:flex;
+			width: 99%;
+			height: 100%;
+			flex-wrap:wrap;
+			background-color: lightgrey;
+
+
+	}
+	.item  {
+		background-color:white;
+		margin-left:10%;
+	
+	}
+	#form {
+		font-size: 44px;
+		
+	}
+	#form >button {
+		 background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 44px;
+    margin: 4px 2px;
+    cursor: pointer;
+	}
+	
+			 </style>
+</head>
+<body  onload="	fuelleIndex(); ">
+<div class="box">
+
+<div class="item">
+<canvas  id="BILD" style="border:1px solid #d3d3d3;" height="1800" width="1250">
+This text is displayed if your browser does not support HTML5 Canvas.
+</canvas></br>
+</div>
+
+<div class="item" id="form">
+<button onClick=" skal(index[0], index[1],index[2])">skalier</button>
+<button onClick="neuesTeil(auswahl);">neu</button>
+ <button class="in" onClick="tone();">tone</button>
+ <form style="border:dotted black 1px;">
+ <fieldset onClick="Auswahl();"> 
+ <input type="radio" name="typ" value="alle" checked >alle  </br>
+ <input type="radio" name="typ" value=0 >Kopf  </br>
+ <input type="radio" name="typ" value=1 >Bauch  </br>
+ <input type="radio" name="typ" value=2 >Fuss  </br>
+</fieldset>
+</form>
+</div>
+
+</div>
+
+</body>
+</html>
